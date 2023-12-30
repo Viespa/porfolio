@@ -1,0 +1,51 @@
+
+
+
+    <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+        <a href="https://www.linkedin.com/in/victor-espigares-perez/" target="_blank" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img class="w-10 h-10 p-1 rounded-full ring-2 ring-green-300 dark:ring-green-500" src="victor-espigares.jpg" alt="Victor Espigares foto"> 
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+        </a>
+        <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
+          
+            <button data-collapse-toggle="mega-menu" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+        </div>
+        <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+            <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+                <li>
+                    <a href="#inicio" class="block py-2 px-3 text-white-600 border-b border-white-100 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Inicio</a>
+                </li>
+                
+                <li>
+                    <a href="#experiencia" class="block py-2 px-3 text-white-900 border-b border-white-100  md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Experiencia</a>
+                </li>
+                <li>
+                    <a href="#projectos" class="block py-2 px-3 text-white-900 border-b border-white-100  md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#sobremi" class="block py-2 px-3 text-white-900 border-b border-white-100 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="#contacto" class="block py-2 px-3 text-white-900 border-b border-white-100  md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var megaMenuButton = document.querySelector('[data-collapse-toggle="mega-menu"]');
+      var megaMenu = document.getElementById('mega-menu');
+  
+      megaMenuButton.addEventListener('click', function () {
+        var isExpanded = megaMenuButton.getAttribute('aria-expanded') === 'true' || false;
+        megaMenuButton.setAttribute('aria-expanded', !isExpanded);
+        megaMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
